@@ -11,15 +11,19 @@
 
   <body>
       <h1> <a href= "index.html">생각하는 코뎅</a>
-      <input type="button" value="Dark Mode" onclick="
-       document.querySelector('body').style.backgroundColor='black';
-       document.querySelector('body').style.color='white';
-              ">
+      <input id="night_day" type="button" value="Dark mode" onclick="
+        if(document.querySelector('#night_day').value === 'Dark mode'){
+          document.querySelector('body').style.backgroundColor='black';
+          document.querySelector('body').style.color='white';
+          document.querySelector('#night_day').value = 'White mode';
+       }else{
+          document.querySelector('body').style.backgroundColor='white';
+          document.querySelector('body').style.color='black';
+          document.querySelector('#night_day').value = 'Dark mode';
+       }
+    ">
 
-      <input type="button" value="White Mode"onclick="
-       document.querySelector('body').style.backgroundColor='white';
-       document.querySelector('body').style.color='black';
-       "> </h1>
+    </h1>
 
     <div id="grid">
         <ol>
@@ -27,16 +31,16 @@
           <li><a href="2.html" >코뎅의 꿈</li></a>
           <li><a href="3.html"  > 코뎅의 연혁</li></a>
         </ol>
-          <div id = "right"> 
+          <div id = "right">
             <h2> 나의 생각하는 장소에 온 것을 환영합니다 </h2><p>
-            <img src="Soojung.jpg" width="150">
+            <img src="soojung.jpg" width="550px">
 
             <p>먼저 이 곳에 대해 소개할게요<br>
-            이 곳은 제가 만든 첫 번째 사이트로 저를 소개하는 장소가 될 예정입니다. 저의 생각들을 다른 사람들의 눈으로 보여질 수 있게 만드는 것. 이게 바로 저의 목표입니다. <br>
-            <u>단기적으로는 매일매일 이 사이트를 업그레이드 시킬 것입니다.</u><br> 이 작은 변화들은 쉽지 않습니다. 하지만 쉽지 않기 때문에 더 재미있을 겁니다.<br> 재미있는 사이트로 찾아오겠습니다. 감사합니다 </p>
+            이 곳은 제가 만든 첫 번째 사이트로 저를 소개하는 장소가 될 예정입니다. 저의 생각들을 다른 사람들의 눈에 보여지는 것. 이게 바로 저의 목표입니다. <br>
+            <u>단기적으로는 매일매일 이 사이트를 업그레이드 시킬 것입니다.</u><br> 이 작은 변화들은 쉽지 않습니다. 하지만 쉽지 않기 때문에 더 재미있을 겁니다.<br> 재미있는 사이트로 보여드리겠습니다. 감사합니다 </p>
 
             <input type="text">
-            <input type="button" value="complate" onclick ="alert ('HEY!! i am sorry. it is not working haha')">
+            <input type="button" value="결과발표" onclick ="alert ('HEY!! i am sorry. it is not working haha')">
 
               <p ></p>
          </div>
